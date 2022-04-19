@@ -6,7 +6,7 @@ body{
 	justify-content: center;
   	align-items: center;
 }
-p.aboutTxt{
+p.aboutTxt, p.DifferenceWebsTxt{
 	max-width: 800px;
 	margin:  auto;
 	
@@ -17,11 +17,16 @@ iframe{
 	margin: auto;
 }
 .fb-like{
-	display: flex;
+	/*display: flex;
 	justify-content: center;
-	margin: auto;
+	margin: auto;*/
 	
 	
+}
+.like{
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .qrImage{
 	margin-left: auto;
@@ -51,13 +56,21 @@ iframe{
     width: 100%;
     height: 1000px;
 }
-#photos, #like, #spa{
+#photos, #like{
 	border-radius: 25px;
     background:white ;
 	margin-top: 10px;
     padding: 20px;
     width: 100%;
     height: 600px;
+}
+#spa{
+	border-radius: 25px;
+    background:white ;
+	margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 750px;
 }
 
 #playlist, #qrcoder, #contact{
@@ -67,8 +80,6 @@ iframe{
     padding: 20px;
     width: 100%;
     height: 600px;
-	
-	
 }
 
 #contactForm{
@@ -102,6 +113,12 @@ h3.a{
 	font-family: "Calibri", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	text-transform: uppercase;
 	font-size: 50px;
+	text-align: center;
+	line-height: 1.8;
+}
+h2{
+	font-family: "Calibri", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 30px;
 	text-align: center;
 	line-height: 1.8;
 }
@@ -157,6 +174,9 @@ h3.a{
 	filter: sepia(80%) hue-rotate(180deg);
 	
   }
+  img.gallery2:hover{
+	border: solid black 10px
+  }
   img:first-child {
 	border-radius: 10px 10px 0 0;
   }
@@ -196,7 +216,7 @@ h3.a{
 	height: 300%;
 	left: -100%;
 	top: -100%;
-	border: solid black 10px;
+	/*border: solid black 10px;*/
   }
   @media (min-width: 40em) {
 	img:hover {
@@ -243,7 +263,7 @@ h3.a{
 	}
   }
 
-  .emoji-drawer {
+.emoji-drawer {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -269,8 +289,10 @@ h3.a{
 }
 
 
+.child{
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+}
 
 
-
-
-  
